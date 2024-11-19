@@ -22,7 +22,7 @@ def process_markers(marker_content, show_code, episode_reel, include_description
     total_shots = 0
 
     # Adjust regex pattern to allow 4 or 5 characters for scene code
-    scene_pattern = re.compile(r"([A-Z0-9]{4,5}) -")
+    scene_pattern = re.compile(r"([A-Z0-9]{3,5}) -")
 
     lines = marker_content.split("\n")
     for line in lines:
